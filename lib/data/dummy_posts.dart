@@ -32,4 +32,14 @@ const DUMMY_POSTS = {
     tipofrete: 'Comercial',
     avatar: '',
   ),
+  '4': const Posts(
+    id: '4',
+    nome: 'Transporte de Soja',
+    tipocaminhao: 'Truck',
+    origem: 'Belo Horizonte',
+    destino: 'Belém',
+    tipocarga: 'Secas',
+    tipofrete: 'Comercial',
+    avatar: '',
+  ),
 };

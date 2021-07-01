@@ -14,14 +14,14 @@ class _CadastroFreteState extends State<CadastroFrete> {
   final Map<String, String> _formData = {};
 
   void _loadFormData(Posts posts) {
-    _formData['id'] = posts.id;
+    /*_formData['id'] = posts.id;
     _formData['nome'] = posts.nome;
     _formData['tipocaminhao'] = posts.tipocaminhao;
     _formData['tipocarga'] = posts.tipocarga;
     _formData['tipofrete'] = posts.tipofrete;
     _formData['tituloanuncio'] = posts.tituloanuncio;
     _formData['origem'] = posts.origem;
-    _formData['destino'] = posts.destino;
+    _formData['destino'] = posts.destino;*/
   }
 
   @override

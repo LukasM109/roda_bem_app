@@ -29,7 +29,15 @@ class Fretes with ChangeNotifier {
     if (posts.id != null &&
         posts.id.trim().isNotEmpty &&
         _items.containsKey(posts.id)) {
-      _items.update(posts.id, (_) => posts);
+      _items.update(
+          posts.id,
+          (_) => Posts(
+              nome: posts.nome,
+              tipocaminhao: posts.tipocaminhao,
+              origem: posts.origem,
+              destino: posts.destino,
+              tipocarga: posts.tipocarga,
+              tipofrete: posts.tipofrete));
     } //inclui se n tiver
     else {
       final id = Random().nextDouble().toString();

@@ -39,13 +39,13 @@ class PostsTile extends StatelessWidget {
                             title: Text('Deseja mesmo excluir?'),
                             content: Text('Tem certeza?'),
                             actions: <Widget>[
-                              FlatButton(
+                              TextButton(
                                 child: Text('Não'),
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
                               ),
-                              FlatButton(
+                              TextButton(
                                 child: Text('Sim'),
                                 onPressed: () {
                                   Provider.of<Fretes>(context, listen: false)

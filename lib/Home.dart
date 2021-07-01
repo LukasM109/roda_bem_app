@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:roda_bem_app/ComEstado.dart';
+import 'package:roda_bem_app/cadastro.dart';
 import 'package:roda_bem_app/cadfrete.dart';
-//import 'package:provider/provider.dart';
-//import 'package:roda_bem_app/cadastro.dart';
-//import 'package:roda_bem_app/cadfrete.dart';
-//import 'package:roda_bem_app/login.dart';
 import 'package:roda_bem_app/provider/fretes.dart';
 import 'package:roda_bem_app/routes/app_routes.dart';
 
@@ -22,17 +19,19 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-        providers: [
-          ChangeNotifierProvider(
-            create: (context) => Fretes(),
-          ),
-        ],
-        child: MaterialApp(
-          routes: {
-            AppRoutes.Home: (_) => LoginPage(),
-            AppRoutes.CadastroFrete: (_) => CadastroFrete(),
-            AppRoutes.ComEstado: (_) => ComEstado()
-          },
-        ));
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => Fretes(),
+        ),
+      ],
+      child: MaterialApp(
+        routes: {
+          AppRoutes.Home: (_) => LoginPage(),
+          AppRoutes.CadastroFrete: (_) => CadastroFrete(),
+          AppRoutes.ComEstado: (_) => ComEstado(),
+          AppRoutes.CadastroPage: (_) => CadastroPage()
+        },
+      ),
+    );
   }
 }

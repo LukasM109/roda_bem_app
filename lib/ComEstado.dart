@@ -32,14 +32,14 @@ class Estado extends State<ComEstado> {
               leading: Icon(Icons.home),
               title: Text('Início'),
               onTap: () {
-                //Navigator.of(context).pushReplacementNamed('/ComEstado');
+                Navigator.of(context).pushReplacementNamed('/ComEstado');
               },
             ),
             ListTile(
               leading: Icon(Icons.add_business),
               title: Text('Cadastrar Frete'),
               onTap: () {
-                //Navigator.of(context).pushReplacementNamed('/cadfrete');
+                Navigator.of(context).pushNamed('/cadfrete');
               },
             ),
             ListTile(
